@@ -115,13 +115,9 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-    // YOUR_SERVICE_ID: import.meta.env.REACT_APP_SERVICE_ID,
-    // YOUR_TEMPLATE_ID: import.meta.env.REACT_APP_TEMPLATE_ID,
-    // YOUR_USER_ID: import.meta.env.REACT_APP_USER_ID,
-
-    YOUR_SERVICE_ID:"service_xgnoc4w",
-    YOUR_TEMPLATE_ID:"template_aqb74qp",
-    YOUR_USER_ID:"pvSkCtPkYaXyqpgHD",
+    YOUR_SERVICE_ID: import.meta.env.REACT_APP_SERVICE_ID,
+    YOUR_TEMPLATE_ID: import.meta.env.REACT_APP_TEMPLATE_ID,
+    YOUR_USER_ID: import.meta.env.REACT_APP_USER_ID,
 };
 
 const socialProfiles = {

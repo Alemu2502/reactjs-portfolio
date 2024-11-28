@@ -4,7 +4,7 @@ import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/animatedCursor";
-import "./App.css";
+import "./app.css";
 
 function ScrollToTop({ children }) {
   const { pathname } = useLocation();
