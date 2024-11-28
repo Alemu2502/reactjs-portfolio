@@ -12,12 +12,12 @@ const introdata = {
         third: "I develop web apps",
     },
     description: "A passionate Full Stack Software Developer 🚀 with experience in building web applications using JavaScript, TypeScript, React, Node.js, Express.js, and other cool libraries and frameworks.",
-    your_img_url: '/src/assets/images/ALEX.jpg'
+    your_img_url: 'https://images.unsplash.com/photo-1514790193030-c89d266d5a9d'
 };
 
 const dataabout = {
     title: "A bit about myself",
-    aboutme: "I am an experienced Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js). With a robust background in web development, I create dynamic and responsive web applications that deliver seamless user experiences. My expertise spans from front-end design to back-end infrastructure, ensuring comprehensive and high-quality solutions. Driven by a passion for continuous learning and innovation, I thrive in collaborative environments and am dedicated to crafting efficient, scalable, and user-friendly applications. I bring a commitment to excellence and a keen eye for detail to every project I undertake.",
+    aboutme: "I am an intermediate Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js). With a robust background in web development, I create dynamic and responsive web applications that deliver seamless user experiences. My expertise spans from front-end design to back-end infrastructure, ensuring comprehensive and high-quality solutions. Driven by a passion for continuous learning and innovation, I thrive in collaborative environments and am dedicated to crafting efficient, scalable, and user-friendly applications. I bring a commitment to excellence and a keen eye for detail to every project I undertake.",
 };
 
 const skills = [
@@ -26,12 +26,9 @@ const skills = [
     { name: "Tailwind CSS", value: 60 },
     { name: "JavaScript", value: 90 },
     { name: "TypeScript", value: 70 },
-    { name: "React", value: 80 },
-    { name: "Node.js", value: 80 },
-    { name: "Express.js", value: 80 },
-    { name: "MongoDB", value: 80 },
-    { name: "PostgreSQL", value: 80 },
-    { name: "MySQL", value: 80 },
+    { name: "mern", value: 80 },
+    { name: "NOSQL", value: 80 },
+    { name: "SQL", value: 80 },
     { name: "WordPress", value: 80 },
     { name: "Jest", value: 70 },
     { name: "Cypress", value: 60 },
@@ -44,17 +41,74 @@ const skills = [
 const services = [
     {
         title: "Full Stack Development",
-        description: "As a proficient Full Stack Developer, I excel in both front-end and back-end development. I build responsive web applications using HTML5, CSS3, Tailwind CSS, JavaScript, TypeScript, React, Node.js, Express.js, MongoDB, MySQL, and PostgreSQL. My goal is to deliver robust and scalable web solutions that seamlessly bridge the gap between design and technology.",
+        description: "As an intermediate Full Stack Developer, I excel in both front-end and back-end development. I build responsive web applications using HTML5, CSS3, Tailwind CSS, JavaScript, TypeScript, React, Node.js, Express.js, MongoDB, MySQL, and PostgreSQL. My goal is to deliver robust and scalable web solutions that seamlessly bridge the gap between design and technology.",
     },
     {
         title: "WordPress Design",
-        description: "I am an experienced WordPress Developer with a strong background in creating dynamic and engaging websites. I specialize in custom theme and plugin development, ensuring that each website I build is tailored to meet the specific needs of my clients. With a keen eye for detail and a passion for seamless user experiences, I deliver high-quality, responsive, and SEO-friendly websites. My goal is to help businesses establish a robust online presence and achieve their digital goals.",
+        description: "I am an intermediate WordPress Developer with a strong background in creating dynamic and engaging websites. I specialize in custom theme and plugin development, ensuring that each website I build is tailored to meet the specific needs of my clients. With a keen eye for detail and a passion for seamless user experiences, I deliver high-quality, responsive, and SEO-friendly websites. My goal is to help businesses establish a robust online presence and achieve their digital goals.",
     },
 ];
 
 const dataportfolio = [
     {
         img: "https://picsum.photos/400/?grayscale",
+        description: "Visit my MERN e-commerce website.",
+        link: "#",
+    },
+
+    {
+        img: "https://picsum.photos/400/800/?grayscale",
+        description: "Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description: "Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/600/?grayscale",
+        description: "Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/300/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/700/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+
+    {
+        img: "https://picsum.photos/400/600/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/300/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/550/?grayscale",
+        description:"Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description: "Visit my MERN e-commerce website.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/700/?grayscale",
         description: "Visit my MERN e-commerce website.",
         link: "#",
     },
@@ -73,7 +127,7 @@ const contactConfig = {
 const socialProfiles = {
     github: "https://github.com/Alemu2502",
     facebook: "https://www.facebook.com/alemu.molla.1806",
-    linkedin: "https://www.linkedin.com/in/alemu2502",
+    linkedin: "https://www.linkedin.com/in/Alemu2502",
     twitter: "https://twitter.com/ALEXSEPPRO",
 };
 
