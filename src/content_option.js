@@ -27,7 +27,7 @@ const skills = [
     { name: "JavaScript", value: 90 },
     { name: "TypeScript", value: 70 },
     { name: "mern", value: 80 },
-     { name: "nextjs", value: 80 }
+     { name: "nextjs", value: 80 },
     { name: "NOSQL", value: 80 },
     { name: "SQL", value: 80 },
     { name: "WordPress", value: 80 },
