@@ -27,6 +27,7 @@ const skills = [
     { name: "JavaScript", value: 90 },
     { name: "TypeScript", value: 70 },
     { name: "mern", value: 80 },
+    { name: "nextjs", value: 80 },
     { name: "NOSQL", value: 80 },
     { name: "SQL", value: 80 },
     { name: "WordPress", value: 80 },
@@ -115,16 +116,16 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-    YOUR_SERVICE_ID: import.meta.env.REACT_APP_SERVICE_ID,
-    YOUR_TEMPLATE_ID: import.meta.env.REACT_APP_TEMPLATE_ID,
-    YOUR_USER_ID: import.meta.env.REACT_APP_USER_ID,
+    YOUR_SERVICE_ID: import.meta.env.VITE_SERVICE_ID,
+    YOUR_TEMPLATE_ID: import.meta.env.VITE_TEMPLATE_ID,
+    YOUR_USER_ID: import.meta.env.VITE_USER_ID,
 };
 
 const socialProfiles = {
-    github: "https://github.com/Alemu2502",
-    facebook: "https://www.facebook.com/alemu.molla.1806",
-    linkedin: "https://www.linkedin.com/in/Alemu2502",
-    twitter: "https://twitter.com/ALEXSEPPRO",
+    github: import.meta.env.VITE_GITHUB,
+    facebook: import.meta.env.VITE_FACEBOOK,
+    linkedin:import.meta.env.VITE_LINKEDIN,
+    twitter: import.meta.env.VITE_TWITTER,
 };
 
 export {
