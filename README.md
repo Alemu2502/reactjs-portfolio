@@ -25,7 +25,7 @@ This project is a personal portfolio built with React.js, showcasing my skills, 
 
 ### Technologies Used
 
-1. Frontend: React.js, HTML, CSS, JavaScript
+1. Frontend: React.js, HTML, CSS, bootstrap, JavaScript
 2. CI/CD: GitHub Actions
 3. Deployment: Netlify
 
@@ -33,27 +33,28 @@ This project is a personal portfolio built with React.js, showcasing my skills, 
 
 Prerequisites
 1. Node.js and npm installed
-
 2. Git installed
-
 3. Installation Steps
 
 Clone the repository:
-
 git clone https://github.com/Alemu2502/reactjs-portfolio.git
+
 cd reactjs-portfolio
 
 Install dependencies:
+
 npm install
 
 ### Running the Project
 
 Development Mode
 To run the project in development mode:
+
 npm start
 
 Production Build
 To create a production build:
+
 npm run build
 
 ### CI/CD Pipeline
@@ -62,17 +63,11 @@ This project uses GitHub Actions for continuous integration and deployment.
  # The CI/CD pipeline includes steps for:
 
 1. Checking out the code
-
 2. Caching Node modules
-
 3. Setting up Node.js
-
 4. Installing dependencies
-
 5. Running tests (commented out for now)
-
 6. Building the project
-
 7. Deploying to Netlify
 
 ### Deployment
@@ -100,7 +95,6 @@ Prerequisites
 To use Docker, ensure you meet the following prerequisites:
 
 1. WSL version: WSL 1.1.3.0 or later
-
 2. Operating System:
 
  Windows 11 64-bit: Home or Pro version 22H2 or higher, or Enterprise or Education version 22H2 or higher.
