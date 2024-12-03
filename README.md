@@ -1,7 +1,3 @@
-
-Overview
-This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
-
 Table of Contents
 1. [Overview](#overview) 
 2. [Features](#features) 
@@ -14,26 +10,36 @@ Table of Contents
 9. [Docker Setup](#docker-setup) 
 10. [Contributing](#contributing)
 11. [License](#license)
+Overview
+This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
-Features:
-Responsive design
-Interactive project showcases
-Contact form integration
-Smooth navigation and transitions
-Automated CI/CD pipeline for deployment
+Features
+Responsive Design: Adapts to different screen sizes for an optimal viewing experience on any device.
 
-Technologies Used:
+Interactive Project Showcases: Highlight projects with detailed descriptions and visual elements.
+
+Contact Form Integration: Enables visitors to get in touch easily.
+
+Smooth Navigation and Transitions: Provides a seamless user experience.
+
+Automated CI/CD Pipeline: Ensures continuous integration and deployment of updates.
+
+Technologies Used
 Frontend: React.js, HTML, CSS, JavaScript
+
 CI/CD: GitHub Actions
+
 Deployment: Netlify
 
-Setup and Installation:
+Setup and Installation
 Prerequisites
 Node.js and npm installed
+
 Git installed
 
 Installation Steps
 Clone the repository:
+
 bash
 git clone https://github.com/Alemu2502/reactjs-portfolio.git
 cd reactjs-portfolio
@@ -44,6 +50,7 @@ npm install
 Running the Project
 Development Mode
 To run the project in development mode:
+
 bash
 npm start
 Production Build
@@ -51,19 +58,24 @@ To create a production build:
 
 bash
 npm run build
-
-CI/CD Pipeline:
+CI/CD Pipeline
 This project uses GitHub Actions for continuous integration and deployment. The CI/CD pipeline includes steps for:
 
 Checking out the code
+
 Caching Node modules
+
 Setting up Node.js
+
 Installing dependencies
+
 Running tests (commented out for now)
+
 Building the project
+
 Deploying to Netlify
 
-Deployment:
+Deployment
 The frontend is deployed using Netlify. The deployment configuration is handled in the GitHub Actions workflow.
 
 Environment Variables
@@ -71,14 +83,7 @@ Make sure to set the following environment variables for proper configuration:
 
 Frontend (set in Netlify):
 
-VITE_SERVICE_ID
-VITE_TEMPLATE_ID
-VITE_USER_ID
-VITE_GITHUB
-VITE_FACEBOOK
-VITE_LINKEDIN
-VITE_TWITTER
-
+REACT_APP_API_URL
 
 Docker Setup
 Prerequisites
@@ -100,74 +105,54 @@ Hardware:
 
 Enable hardware virtualization in BIOS. For more information, see Virtualization.
 
+Installing Docker Desktop
 Download Docker Desktop:
 
-Docker Desktop for Windows: https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe(use in this way for all other links )
+Docker Desktop for Windows: https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe
 
 Docker Desktop for Mac: https://desktop.docker.com/mac/stable/Docker.dmg
- check docker version
- open your cmd or power shell 
- docker --version
 
- Installing Docker Desktop
+Install Docker Desktop:
+
 Follow the installation instructions for your operating system.
 
-check Virtualization is Enabled in your bios settings
-Enabling WSL 2 (Windows Users)
-Enable Windows Subsystem for Linux:
+Check Docker Version: Open your Command Prompt or PowerShell and run:
 
-Open PowerShell as Administrator and run:
-wsl --install 
-Run wsl -l -v in PowerShell to see the installed distributions and versions.
+bash
+docker --version
+Enabling WSL 2 (Windows Users)
+Enable Windows Subsystem for Linux: Open PowerShell as Administrator and run:
+
+bash
+wsl --install
 sudo apt-get update
 sudo apt-get upgrade
-then now we can install docker in ubuntu or wsl 
+Enable Virtual Machine Platform:
+
+Still in PowerShell, run:
+
+bash
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+Install Docker in WSL:
+
+After setting up WSL, install Docker:
+
+bash
 sudo apt-get install docker.io
+Add User to Docker Group (optional):
 
-and we should your user to the docker group  to run docker comands without sudo if you want else skip this
+If you want to run Docker commands without sudo, add your user to the Docker group:
 
-
-
+bash
+sudo usermod -aG docker $USER
 For more information on setting up WSL 2 with Docker Desktop, see WSL Documentation: https://docs.microsoft.com/en-us/windows/wsl/
 
-> Note: > Docker only supports Docker Desktop on Windows for those versions of Windows that are still within Microsoft’s servicing timeline. Docker Desktop is not supported on server versions of Windows, such as Windows Server 2019 or Windows Server 2022. For more information on how to run containers on Windows Server, see Microsoft's official documentation.
+> Note: Docker only supports Docker Desktop on Windows for those versions of Windows that are still within Microsoft’s servicing timeline. Docker Desktop is not supported on server versions of Windows, such as Windows Server 2019 or Windows Server 2022. For more information on how to run containers on Windows Server, see Microsoft's official documentation.
 
-> Important: > To run Windows containers, you need Windows 10 or Windows 11 Professional or Enterprise edition. Windows Home or Education editions only allow you to run Linux containers.
+> Important: To run Windows containers, you need Windows 10 or Windows 11 Professional or Enterprise edition. Windows Home or Education editions only allow you to run Linux containers.
 
 Contributing
 Feel free to contribute to this project by creating a pull request or opening an issue.
 
 License
 This project is licensed under the MIT License.
-
-
-
-
-CI/CD Pipeline
-This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD). The workflow automates the process of building, testing, and deploying the application to Netlify.
-
-Workflow Overview
-Trigger: The workflow triggers on every push or pull request to the main branch.
-
-Steps:
-
-Checkout the code.
-
-Cache dependencies.
-
-Set up the Node.jsenvironment.
-
-Install project dependencies using npm ci.
-
-Run tests to ensure code quality.
-
-Build the project.
-
-Deploy the project to Netlify.
-
-Benefits
-Efficiency: The workflow completes in around 25 seconds, ensuring fast and reliable deployments.
-
-Quality Assurance: Tests run before deployment to catch any issues early.
-
-Best Practices: Implements industry best practices such as dependency caching and environment setup.
