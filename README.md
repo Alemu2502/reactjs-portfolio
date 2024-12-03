@@ -16,23 +16,21 @@ Table of Contents
 
 This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
-Features
+### Features
 Responsive Design: Adapts to different screen sizes for an optimal viewing experience on any device.
 Interactive Project Showcases: Highlight projects with detailed descriptions and visual elements.
-Contact Form Integration: Enables visitors to get in touch easily.
+Cont act Form Integration: Enables visitors to get in touch easily.
 Smooth Navigation and Transitions: Provides a seamless user experience.
 
 Automated CI/CD Pipeline:
  Ensures continuous integration and deployment of updates.
 
-Technologies Used
+### Technologies Used
 Frontend: React.js, HTML, CSS, JavaScript
-
 CI/CD: GitHub Actions
-
 Deployment: Netlify
 
-Setup and Installation
+### Setup and Installation
 Prerequisites
 Node.js and npm installed
 Git installed
@@ -52,7 +50,7 @@ Production Build
 To create a production build:
 npm run build
 
-CI/CD Pipeline
+### CI/CD Pipeline
 
 This project uses GitHub Actions for continuous integration and deployment. The CI/CD pipeline includes steps for:
 
@@ -64,10 +62,10 @@ Running tests (commented out for now)
 Building the project
 Deploying to Netlify
 
-Deployment
+### Deployment
 The frontend is deployed using Netlify. The deployment configuration is handled in the GitHub Actions workflow.
 
-Environment Variables
+### Environment Variables
 Make sure to set the following environment variables for proper configuration:
 
 Frontend (set in Netlify):
@@ -80,7 +78,7 @@ VITE_FACEBOOK
 VITE_LINKEDIN
 VITE_TWITTER
 
-Docker Setup
+### Docker Setup
 Prerequisites
 To use Docker, ensure you meet the following prerequisites:
 WSL version: WSL 1.1.3.0 or later
@@ -135,8 +133,8 @@ For more information on setting up WSL 2 with Docker Desktop, see WSL Documentat
 
 > Important: To run Windows containers, you need Windows 10 or Windows 11 Professional or Enterprise edition. Windows Home or Education editions only allow you to run Linux containers.
 
-Contributing
+#### Contributing
 Feel free to contribute to this project by creating a pull request or opening an issue.
 
-License
+### License
 This project is licensed under the MIT License.
