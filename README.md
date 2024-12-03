@@ -1,17 +1,18 @@
 Table of Contents
-Overview
-Features
-Technologies Used
-Setup and Installation
-Running the Project
-CI/CD Pipeline
-Deployment
-Environment Variables
-Docker Setup
-Contributing
-License
+1. [Overview](#overview) 
+2. [Features](#features) 
+3. [Technologies Used](#technologies-used) 
+4. [Setup and Installation](#setup-and-installation)
+5. [Running the Project](#running-the-project) 
+6. [CI/CD Pipeline](#cicd-pipeline) 
+7. [Deployment](#deployment) 
+8. [Environment Variables](#environment-variables)
+9. [Docker Setup](#docker-setup) 
+10. [Contributing](#contributing)
+11. [License](#license)
 
 Overview
+
 This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
 Features
@@ -20,7 +21,8 @@ Interactive Project Showcases: Highlight projects with detailed descriptions and
 Contact Form Integration: Enables visitors to get in touch easily.
 Smooth Navigation and Transitions: Provides a seamless user experience.
 
-Automated CI/CD Pipeline: Ensures continuous integration and deployment of updates.
+Automated CI/CD Pipeline:
+ Ensures continuous integration and deployment of updates.
 
 Technologies Used
 Frontend: React.js, HTML, CSS, JavaScript
@@ -30,7 +32,6 @@ CI/CD: GitHub Actions
 Deployment: Netlify
 
 Setup and Installation
-
 Prerequisites
 Node.js and npm installed
 Git installed
@@ -43,16 +44,15 @@ cd reactjs-portfolio
 Install dependencies:
 npm install
 Running the Project
-
 Development Mode
 To run the project in development mode:
 npm start
 Production Build
-
 To create a production build:
 npm run build
 
 CI/CD Pipeline
+
 This project uses GitHub Actions for continuous integration and deployment. The CI/CD pipeline includes steps for:
 
 Checking out the code
@@ -62,8 +62,8 @@ Installing dependencies
 Running tests (commented out for now)
 Building the project
 Deploying to Netlify
-Deployment
 
+Deployment
 The frontend is deployed using Netlify. The deployment configuration is handled in the GitHub Actions workflow.
 
 Environment Variables
@@ -82,40 +82,51 @@ VITE_TWITTER
 Docker Setup
 Prerequisites
 To use Docker, ensure you meet the following prerequisites:
-
 WSL version: WSL 1.1.3.0 or later
 Operating System:
 Windows 11 64-bit: Home or Pro version 22H2 or higher, or Enterprise or Education version 22H2 or higher.
+
 Windows 10 64-bit: Minimum required is Home or Pro 22H2 (build 19045) or higher, or Enterprise or Education 22H2 (build 19045) or higher.
 
 Hardware:
 64-bit processor with Second Level Address Translation (SLAT)
 4GB system RAM
-
 Enable hardware virtualization in BIOS. For more information, see Virtualization.
 
+
 Download Docker Desktop:
+
 Docker Desktop for Windows: https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe
+
 Docker Desktop for Mac: https://desktop.docker.com/mac/stable/Docker.dmg
 
-Install Docker Desktop: Follow the installation instructions for your operating system.
+Installing Docker Desktop
+
+Follow the installation instructions for your operating system.
 
 Check Docker Version: Open your Command Prompt or PowerShell and run:
-docker --version
 
+docker --version
 Enabling WSL 2 (Windows Users)
 Enable Windows Subsystem for Linux: Open PowerShell as Administrator and run:
 
 wsl --install
 sudo apt-get update
 sudo apt-get upgrade
-Enable Virtual Machine Platform: Still in PowerShell, run:
+Enable Virtual Machine Platform:
+
+Still in PowerShell, run:
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-Install Docker in WSL: After setting up WSL, install Docker:
+Install Docker in WSL:
+
+After setting up WSL, install Docker:
 
 sudo apt-get install docker.io
-Add User to Docker Group (optional): If you want to run Docker commands without sudo, add your user to the Docker group:
+Add User to Docker Group (optional):
+
+If you want to run Docker commands without sudo, add your user to the Docker group:
+
 sudo usermod -aG docker $USER
 For more information on setting up WSL 2 with Docker Desktop, see WSL Documentation: https://docs.microsoft.com/en-us/windows/wsl/
 
