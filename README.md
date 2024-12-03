@@ -17,79 +17,63 @@ This project is a personal portfolio built with React.js, showcasing my skills, 
 
 ### Features
 
-Responsive Design: Adapts to different screen sizes for an optimal viewing experience on any device.
-
-Interactive Project Showcases: Highlight projects with detailed descriptions and visual elements.
-
-Cont act Form Integration: Enables visitors to get in touch easily.
-Smooth Navigation and Transitions: Provides a seamless user experience.
-
-Automated CI/CD Pipeline:
-
- Ensures continuous integration and deployment of updates.
+1. Responsive Design: Adapts to different screen sizes for an optimal viewing experience on any device.
+2. Interactive Project Showcases: Highlight projects with detailed descriptions and visual elements.
+3. Contact Form Integration: Enables visitors to get in touch easily.
+4. Smooth Navigation and Transitions: Provides a seamless user experience.
+5. Automated CI/CD Pipeline: Ensures continuous integration and deployment of updates.
 
 ### Technologies Used
 
-Frontend: React.js, HTML, CSS, JavaScript
-
-CI/CD: GitHub Actions
-
-Deployment: Netlify
+1. Frontend: React.js, HTML, CSS, JavaScript
+2. CI/CD: GitHub Actions
+3. Deployment: Netlify
 
 ### Setup and Installation
 
 Prerequisites
+1. Node.js and npm installed
 
-Node.js and npm installed
+2. Git installed
 
-Git installed
-
-Installation Steps
+3. Installation Steps
 
 Clone the repository:
 
 git clone https://github.com/Alemu2502/reactjs-portfolio.git
-
 cd reactjs-portfolio
 
 Install dependencies:
-
 npm install
 
 ### Running the Project
 
 Development Mode
-
 To run the project in development mode:
-
 npm start
 
-
 Production Build
-
 To create a production build:
-
 npm run build
 
 ### CI/CD Pipeline
 
 This project uses GitHub Actions for continuous integration and deployment.
+ # The CI/CD pipeline includes steps for:
 
- The CI/CD pipeline includes steps for:
+1. Checking out the code
 
-Checking out the code
+2. Caching Node modules
 
-Caching Node modules
+3. Setting up Node.js
 
-Setting up Node.js
+4. Installing dependencies
 
-Installing dependencies
+5. Running tests (commented out for now)
 
-Running tests (commented out for now)
+6. Building the project
 
-Building the project
-
-Deploying to Netlify
+7. Deploying to Netlify
 
 ### Deployment
 
@@ -101,19 +85,13 @@ Make sure to set the following environment variables for proper configuration:
 
 Frontend (set in Netlify):
 
-VITE_SERVICE_ID
-
-VITE_TEMPLATE_ID
-
-VITE_USER_ID
-
-VITE_GITHUB
-
-VITE_FACEBOOK
-
-VITE_LINKEDIN
-
-VITE_TWITTER
+1. VITE_SERVICE_ID
+2. VITE_TEMPLATE_ID
+3. VITE_USER_ID
+4. VITE_GITHUB
+5. VITE_FACEBOOK
+6. VITE_LINKEDIN
+7. VITE_TWITTER
 
 ### Docker Setup
 
@@ -121,21 +99,17 @@ Prerequisites
 
 To use Docker, ensure you meet the following prerequisites:
 
-WSL version: WSL 1.1.3.0 or later
+1. WSL version: WSL 1.1.3.0 or later
 
-Operating System:
+2. Operating System:
 
-Windows 11 64-bit: Home or Pro version 22H2 or higher, or Enterprise or Education version 22H2 or higher.
-
+ Windows 11 64-bit: Home or Pro version 22H2 or higher, or Enterprise or Education version 22H2 or higher.
 Windows 10 64-bit: Minimum required is Home or Pro 22H2 (build 19045) or higher, or Enterprise or Education 22H2 (build 19045) or higher.
 
 Hardware:
-
-64-bit processor with Second Level Address Translation (SLAT)
-
-4GB system RAM
-
-Enable hardware virtualization in BIOS. For more information, see Virtualization.
+1. 64-bit processor with Second Level Address Translation (SLAT)
+2. 4GB system RAM
+3. Enable hardware virtualization in BIOS. For more information, see Virtualization.
 
 Download Docker Desktop:
 
@@ -148,34 +122,25 @@ Installing Docker Desktop
 Follow the installation instructions for your operating system.
 
 Check Docker Version: Open your Command Prompt or PowerShell and run:
-
 docker --version
 
 Enabling WSL 2 (Windows Users)
-
 Enable Windows Subsystem for Linux: Open PowerShell as Administrator and run:
-
 wsl --install
-
 sudo apt-get update
-
 sudo apt-get upgrade
 
 Enable Virtual Machine Platform:
-
 Still in PowerShell, run:
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 Install Docker in WSL:
 
 After setting up WSL, install Docker:
-
 sudo apt-get install docker.io
 
 Add User to Docker Group (optional):
-
 If you want to run Docker commands without sudo, add your user to the Docker group:
-
 sudo usermod -aG docker $USER
 
 For more information on setting up WSL 2 with Docker Desktop, see WSL Documentation: https://docs.microsoft.com/en-us/windows/wsl/
