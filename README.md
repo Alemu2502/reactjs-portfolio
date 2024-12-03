@@ -1,3 +1,4 @@
+# Header
 Table of Contents
 1. [Overview](#overview) 
 2. [Features](#features) 
@@ -11,7 +12,7 @@ Table of Contents
 10. [Contributing](#contributing)
 11. [License](#license)
 
-Overview
+### Overview
 
 This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
