@@ -7,7 +7,7 @@ Table of Contents
 6. [CI/CD Pipeline](#cicd-pipeline) 
 7. [Deployment](#deployment) 
 8. [Environment Variables](#environment-variables)
-9. [Docker Setup](#docker-setup) 
+9. [Emailjs Integration](#emailjs-integration) 
 10. [Contributing](#contributing)
 11. [License](#license)
 
@@ -27,7 +27,7 @@ This project is a personal portfolio built with React.js, showcasing my skills, 
 
 1. Frontend: React.js, HTML, CSS, bootstrap, JavaScript
 2. CI/CD: GitHub Actions
-3. Deployment: Netlify
+3. Deployment: Netlify(The frontend of this project is deployed using Netlify. If you haven't created a Netlify account yet, you can sign up for free [here](https://app.netlify.com/signup))
 
 ### Setup and Installation
 
@@ -38,25 +38,30 @@ Prerequisites
 
 Clone the repository:
 
- git clone https://github.com/Alemu2502/reactjs-portfolio.git
-   reactjs-portfolio
+git clone https://github.com/Alemu2502/reactjs-portfolio.git
+
+   cd reactjs-portfolio
 
 Install dependencies:
- npm install
+
+   npm install
 
 ### Running the Project
 
 Development Mode
-To run the project in development mode:
- npm start
+  To run the project in development mode:
 
-Production Build
-To create a production build:
- npm run build
+  npm start
+
+  Production Build
+  To create a production build: 
+
+   npm run build
 
 ### CI/CD Pipeline
 
 This project uses GitHub Actions for continuous integration and deployment.
+
  # The CI/CD pipeline includes steps for:
 
 1. Checking out the code
@@ -73,72 +78,76 @@ The frontend is deployed using Netlify. The deployment configuration is handled 
 
 ### Environment Variables
 
-Make sure to set the following environment variables for proper configuration:
+Frontend (set in Netlify): In this project, i utilize several environment variables to 
+maintain consistency and manage configurations. These variables include both essential 
+service identifiers and social media links. While the social media links are stored in 
+the environment file for consistency, they are intended to be publicly accessible. 
+If you prefer, you can use them as public values.
 
-Frontend (set in Netlify):
+Here are the environment variables used:
 
-1. VITE_SERVICE_ID
-2. VITE_TEMPLATE_ID
-3. VITE_USER_ID
-4. VITE_GITHUB
-5. VITE_FACEBOOK
-6. VITE_LINKEDIN
-7. VITE_TWITTER
+ 1. VITE_SERVICE_ID
+ 2. VITE_TEMPLATE_ID
+ 3. VITE_USER_ID
+ 4. VITE_GITHUB
+ 5. VITE_FACEBOOK
+ 6. VITE_LINKEDIN
+ 7. VITE_TWITTER
 
-### Docker Setup
+To set these variables in Netlify, you can navigate to the site's settings and add them under the "Build & Deploy" section.
 
-Prerequisites
+### Emailjs Integration
 
-To use Docker, ensure you meet the following prerequisites:
+EmailJS Integration
 
-1. WSL version: WSL 1.1.3.0 or later
-2. Operating System:
+Overview
 
- Windows 11 64-bit: Home or Pro version 22H2 or higher, or Enterprise or Education version 22H2 or higher.
-Windows 10 64-bit: Minimum required is Home or Pro 22H2 (build 19045) or higher, or Enterprise or Education 22H2 (build 19045) or higher.
+This project utilizes EmailJS to handle the contact form submissions. EmailJS allows you to send emails directly from your JavaScript code without needing a server.
 
-Hardware:
-1. 64-bit processor with Second Level Address Translation (SLAT)
-2. 4GB system RAM
-3. Enable hardware virtualization in BIOS. For more information, see Virtualization.
+Why EmailJS?
 
-Download Docker Desktop:
+No Server Required: 
+EmailJS provides a serverless solution to send emails from your client-side application.
 
-Docker Desktop for Windows: https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe
+Easy Setup:
+ With minimal configuration, you can integrate EmailJS and start sending emails.
 
-Docker Desktop for Mac: https://desktop.docker.com/mac/stable/Docker.dmg
+Secure: 
+EmailJS handles the email sending process securely, so you don't need to expose your SMTP credentials.
 
-Installing Docker Desktop
+Setup and Integration
+Follow these steps to integrate EmailJS with your contact form:
 
-Follow the installation instructions for your operating system.
+Create an Account: If you don't have an EmailJS account, sign up [here](https://dashboard.emailjs.com/sign-up)
 
-Check Docker Version: Open your Command Prompt or PowerShell and run:
-docker --version
+Create a New Email Service:
 
-Enabling WSL 2 (Windows Users)
-Enable Windows Subsystem for Linux: Open PowerShell as Administrator and run:
-wsl --install
-sudo apt-get update
-sudo apt-get upgrade
+After logging in, go to the Email Services section and create a new email service.
 
-Enable Virtual Machine Platform:
-Still in PowerShell, run:
+Add your email provider (e.g., Gmail, Outlook) and connect it.
 
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-Install Docker in WSL:
+Create an Email Template:
 
-After setting up WSL, install Docker:
-sudo apt-get install docker.io
+Navigate to the Email Templates section and create a new template.
 
-Add User to Docker Group (optional):
-If you want to run Docker commands without sudo, add your user to the Docker group:
-sudo usermod -aG docker $USER
+Define the template parameters and structure (e.g., subject, body).
 
-For more information on setting up WSL 2 with Docker Desktop, see WSL Documentation: https://docs.microsoft.com/en-us/windows/wsl/
+Get Your User ID(public key), Service ID, and Template ID:
 
-> Note: Docker only supports Docker Desktop on Windows for those versions of Windows that are still within Microsoft’s servicing timeline. Docker Desktop is not supported on server versions of Windows, such as Windows Server 2019 or Windows Server 2022. For more information on how to run containers on Windows Server, see Microsoft's official documentation.
+Go to the Integration section and copy your User ID.
 
-> Important: To run Windows containers, you need Windows 10 or Windows 11 Professional or Enterprise edition. Windows Home or Education editions only allow you to run Linux containers.
+Note down your Service ID and Template ID from the Email Services and Templates sections, respectively.
+
+so after that Add these Environment Variables to github secrets.
+
+Testing
+
+Local Testing: 
+Run your project locally and test the contact form to ensure it sends emails correctly.
+
+Deployed Testing: 
+
+After deploying your project (e.g., on Netlify), test the contact form again to ensure it works in the live environment.
 
 ### Contributing
 
@@ -150,8 +159,17 @@ Feel free to contribute to this project by creating a pull request or opening an
 
 Copyright (c) 2024 Alemu2502
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+ software and associated documentation files (the "Software"), to deal in the Software 
+ without restriction, including without limitation the rights to use, copy, modify, 
+ merge, publish, distribute, sublicense, and/or sell copies of the Software, and to 
+ permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR 
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
