@@ -4,7 +4,6 @@
       padding-top: 40px;
     }
   }
-  
   /* Page transition animations */
   .page-enter {
     transform: translateY(100%);
