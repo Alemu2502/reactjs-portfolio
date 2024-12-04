@@ -8,8 +8,11 @@ Table of Contents
 7. [Deployment](#deployment) 
 8. [Environment Variables](#environment-variables)
 9. [Emailjs Integration](#emailjs-integration) 
-10. [Contributing](#contributing)
-11. [License](#license)
+10. [Clean-Up Old Workflows](#clean-up-old-workflows)
+11. [Contributing](#contributing)
+12. [Contact](#contact)
+13. [License](#license)
+14. [Conclusion](#conclusion)
 
 ### Overview
 
@@ -149,9 +152,57 @@ Deployed Testing:
 
 After deploying your project (e.g., on Netlify), test the contact form again to ensure it works in the live environment.
 
+## Clean-Up Old Workflows 
+
+To maintain a clean and manageable CI/CD history, i implement a periodic clean-up process. This process involves: 
+1. Scheduled Clean-Up:
+ Every moth, old workflows that have been resolved and documented are deleted. This helps keep the workflow history clean and efficient. 
+ 2. Automated Clean-Up: 
+ I use a GitHub Actions workflow to automate the clean-up process. The workflow runs every moth and deletes old workflows. The clean-up workflow can be found [here](.github/workflows/cleanup.yml). 
+ 3. Archiving: 
+ Significant issues and their resolutions are documented and archived before deletion. By following these best practices, we ensure that our CI/CD pipeline remains efficient and clutter-free. If you have any suggestions or improvements, feel free to open a pull request or contact me. 
+
+but fisrt you should Checking and Updating GitHub Token Permissions
+To ensure your GitHub Actions workflow can run correctly, follow these steps to check and update the GITHUB_TOKEN permissions:
+
+Steps to Check and Update GITHUB_TOKEN Permissions:
+
+Navigate to Your Repository Settings:
+
+1. Go to your GitHub repository.
+2. Click on the "Settings" tab.
+3. Access Actions Settings:
+
+In the left sidebar, scroll down to find and click on "Actions".
+
+1. General Settings:
+2. Under the "Actions" section, click on "General".
+
+Update Workflow Permissions:
+
+Look for the "Workflow permissions" section.
+
+Ensure that the "Read and write permissions" option is selected. This setting allows the GITHUB_TOKEN to perform read and write operations, such as deleting workflow runs.
+
 ### Contributing
 
 Feel free to contribute to this project by creating a pull request or opening an issue.
+
+### Contact
+For any questions, suggestions, or collaboration opportunities, feel free to connect with me through the following channels:
+
+Email: alemu4617@gmail.com
+
+Portfolio: https://my-react-app-o8w4.onrender.com/  - Explore my projects and learn more about my work.
+
+Docker Hub: https://hub.docker.com/repository/docker/alemu2502/my-react-docker-app - Access the Docker images for this project.
+
+LinkedIn:   https://www.linkedin.com/in/Alemu2502 - Connect with me professionally.
+
+Facebook: https://www.facebook.com/alemu.molla.1806 
+
+Twitter: https://twitter.com/ALEXSEPPRO
+  - Follow me for updates and insights.
 
 ### License
 
@@ -173,3 +224,11 @@ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIG
 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR 
 THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### Conclusion
+
+Thank you for exploring my React.jsPortfolio project! This project showcases my skills and experience with modern web development technologies, including React.js, Docker, and CI/CD pipelines. By providing a clear structure and comprehensive documentation, I aim to make it easy for others to understand, use, and contribute to the project.
+
+Whether you are setting up your own environment, contributing through pull requests, or deploying the project to Docker Hub, I hope you find this project useful and inspiring. Your feedback and contributions are highly valued and can help improve this project further.
+
+Feel free to connect with me through the provided social media links for any questions, suggestions, or collaboration opportunities.
