@@ -14,7 +14,7 @@ Table of Contents
 13. [License](#license)
 14. [Conclusion](#conclusion)
 
-### Overview
+# Overview
 
 This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
@@ -112,7 +112,7 @@ To set these variables in Netlify, you can navigate to the site's settings and a
 
 ## EmailJS Integration
 
-### Overview
+#### Overview
 
 This project utilizes EmailJS to handle the contact form submissions. EmailJS allows you to send emails directly from your JavaScript code without needing a server.
 
@@ -216,7 +216,7 @@ Twitter: https://twitter.com/ALEXSEPPRO
 
 # License
 
- MIT License
+ #### MIT License
 
 Copyright (c) 2024 Alemu2502
 
