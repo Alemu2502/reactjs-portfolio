@@ -18,17 +18,22 @@ Table of Contents
 
 This project is a personal portfolio built with React.js, showcasing my skills, projects, and experience. The portfolio features a CI/CD pipeline for seamless deployment and updates.
 
-### Features
+# Features
 
-1. Responsive Design: Adapts to different screen sizes for an optimal viewing experience on any device.
-2. Interactive Project Showcases: Highlight projects with detailed descriptions and visual elements.
-3. Contact Form Integration: Enables visitors to get in touch easily.
-4. Smooth Navigation and Transitions: Provides a seamless user experience.
-5. Automated CI/CD Pipeline: Ensures continuous integration and deployment of updates.
+# 1. Responsive Design: 
+Adapts to different screen sizes for an optimal viewing experience on any device.
+# 2. Interactive Project Showcases: 
+Highlight projects with detailed descriptions and visual elements.
+# 3. Contact Form Integration: 
+Enables visitors to get in touch easily.
+# 4. Smooth Navigation and Transitions:
+ Provides a seamless user experience.
+# 5. Automated CI/CD Pipeline:
+ Ensures continuous integration and deployment of updates.
 
 ### Technologies Used
 
-1. Frontend: React.js, HTML, CSS, JavaScript
+1. Frontend: React.js, HTML, CSS, JavaScript, Vite
 2. CI/CD: GitHub Actions
 3. Deployment: Netlify(The frontend of this project is deployed using Netlify. If you haven't created a Netlify account yet, you can sign up for free [here](https://app.netlify.com/signup))
 
