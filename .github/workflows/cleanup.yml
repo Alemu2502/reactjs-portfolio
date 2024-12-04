@@ -1,0 +1,38 @@
+name: Clean-Up Old Workflows
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'  # 3:00 AM UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Install GitHub CLI
+        run: sudo apt-get install gh
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Set up the repository
+        uses: actions/checkout@v2
+
+      - name: Check Token Permissions
+        run: |
+          echo "Checking GITHUB_TOKEN permissions..."
+          gh auth status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clean up old workflow runs
+        run: |
+          gh run list --repo Alemu2502/reactjs-with-docker --limit 1000 --json databaseId,status,workflowName,createdAt | jq -c '.[] | select(.status == "completed") | .databaseId' | while read -r run_id; do
+            echo "Deleting workflow run ID: $run_id"
+            gh run delete $run_id --repo Alemu2502/reactjs-with-docker
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
