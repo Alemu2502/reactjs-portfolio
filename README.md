@@ -20,9 +20,9 @@ This project is a personal portfolio built with React.js, showcasing my skills, 
 
 # Features
 
-# 1. Responsive Design: 
+#### 1. Responsive Design: 
 Adapts to different screen sizes for an optimal viewing experience on any device.
-# 2. Interactive Project Showcases: 
+#### 2. Interactive Project Showcases: 
 Highlight projects with detailed descriptions and visual elements.
 # 3. Contact Form Integration: 
 Enables visitors to get in touch easily.
