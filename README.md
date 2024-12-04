@@ -194,6 +194,8 @@ Look for the "Workflow permissions" section.
 
 Ensure that the "Read and write permissions" option is selected. This setting allows the GITHUB_TOKEN to perform read and write operations, such as deleting workflow runs.
 
+You should replace my GitHub username and repository with yours in .github/workflows/cleanup.yml.
+
 # Contributing
 
 Feel free to contribute to this project by creating a pull request or opening an issue.
