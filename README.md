@@ -205,9 +205,7 @@ For any questions, suggestions, or collaboration opportunities, feel free to con
 
 Email: alemu4617@gmail.com
 
-Portfolio: https://my-react-app-o8w4.onrender.com/  - Explore my projects and learn more about my work.
-
-Docker Hub: https://hub.docker.com/repository/docker/alemu2502/my-react-docker-app - Access the Docker images for this project.
+Portfolio: https://alemumolla-portfolio.netlify.app/  - Explore my projects and learn more about my work.
 
 LinkedIn:   https://www.linkedin.com/in/Alemu2502 - Connect with me professionally.
 
