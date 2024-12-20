@@ -28,6 +28,7 @@ const skills = [
     { name: "TypeScript", value: 70 },
     { name: "mern", value: 80 },
     { name: "nextjs", value: 80 },
+    { name: "Webpack", value: 60 },
     { name: "NOSQL", value: 80 },
     { name: "SQL", value: 80 },
     { name: "WordPress", value: 80 },
@@ -54,7 +55,7 @@ const dataportfolio = [
     {
         img: "https://picsum.photos/400/?grayscale",
         description: "Visit my MERN e-commerce website.",
-        link: "#",
+        link: "https://alemumolla-ecommerce.netlify.app/",
     },
 
     {
